@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Card</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="assist/js/lib/angular.min.js"></script>
+    <script src="assist/js/custom/app.js"></script>
+    <script src="assist/js/custom/controller.js"></script>
+    <script src="assist/js/custom/model.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="wedCtrl">
+
+    <div id="navigation">
+        <div id="navlist">
+            <a href="#homepage">Home</a>
+            <a href="#jamesjones">Jane & Jones</a>
+            <a href="#Weddingaddr">Wedding</a>
+            <a href="#response">RSVP</a>
+        </div>
+    </div>
+    <div id="homepage">
+        <div class="content">
+            <h1>Arun & Avani</h1>
+            <h2>Are getting married</h2>
+            <h2>30 Sep 2019</h2>
+        </div>
+    </div>
+    <div class="format2" id="jamesjones">
+        <div class="data">
+            <h1>Arun & Avani</h1>
+
+            <img src="images/wedding_couple2.jpg" alt="couples2">
+            <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Excepteur
+                    sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+
+            <div class="info_link"> <a href="#Weddingaddr">Wedding Details</a></div>
+        </div>
+    </div>
+    <div class="coverimg">
+        <div class="content">
+            <h1>You Are Invited</h1>
+            <h2>of course..</h2>
+        </div>
+    </div>
+    <div class="format2" id="Weddingaddr">
+        <div class="data">
+            <h1>THE WEDDING</h1>
+            <img src="images/wedding_location.jpg" alt="">
+            <div class="address">
+                <div id="halfAddr">
+                    <h1>When</h1>
+                    <p>Wedding Ceremony - 2:00pm</p>
+                    <p>Reception & Dinner - 5:00pm</p>
+                </div>
+                <div id="halfAddr">
+                    <h1>Where</h1>
+                    <p>Some place, an address</p>
+                    <p>Some where, some address</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="format2" id="response">
+        <div class="data">
+            <h1>HOPE YOU CAN MAKE IT!</h1>
+            <p>Kindly Respond By August,31 </p>
+            <div class="button"><button id="button" ng-init="isCheck='true'" ng-click="shareRes(isCheck)">RSVP</button></div>
+        </div>
+    </div>
+    <div class="response" id="res">
+        <div class="response_data">
+            <div class="data">
+                <h1>CAN YOU COME?</h1>
+                <p class="address">We really hope you can make it.</p>
+
+                <input type="text" placeholder="Namer(s)" ng-model="name" name="name" minlength="2" required>
+                <span id="req" class="valid">Name is required*</span>
+                <p class="address">Sincerely, Arun & Avani</p>
+                <div id="rspv_btn">
+                    <button ng-click="confirmation()">
+                                Going
+                        </button>
+                    <button ng-click="close()">Can't Come</button>
+                    <!-- <input type="submit" value="" ng-click="confirmation()">
+                        <input type="submit" value="" ng-click="close()"> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="format2" id="cpywrt">
+        <div class="data">
+            <span>Created by Sagar Kumar</span>
+        </div>
+    </div>
+</body>
+
+</html>

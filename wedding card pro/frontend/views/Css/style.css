@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+}
+
+div {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+div img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 150px 0px;
+}
